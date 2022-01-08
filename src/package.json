@@ -1,0 +1,28 @@
+{
+  "name": "node-udemy",
+  "version": "1.0.0",
+  "description": "practice of NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base3": "node app --base=3 --multiplier=2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdocampo/nodejs-udemy.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "es6"
+  ],
+  "author": "Hugo Ocampo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hdocampo/nodejs-udemy/issues"
+  },
+  "homepage": "https://github.com/hdocampo/nodejs-udemy#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
