@@ -4,8 +4,8 @@ let multiply = (base, multiplier) => {
 
     return new Promise((resolve, reject) => {
 
-        if(!Number(base)) {
-            reject(`${base} => Is not a number`);
+        if(!Number(base) || !Number(multiplier)) {
+            reject(`${base} and ${multiplier} must be numbers!`);
             return;
         }
         let data = '';

@@ -1,8 +1,11 @@
 const { multiply } = require('./operations');
+const argv = require('yargs').argv;
 
-const [ , , arg3, arg4] = process.argv;
-const [ , base] = arg3.split('=');
-const [ , multiplier] = arg4.split('=');
+console.log(argv)
+
+const { base, multiplier } = argv;
+
+console.log(typeof base, typeof multiplier)
 
 multiply(base, multiplier)
     .then(fileName => console.log(`File created: ${fileName}`))
