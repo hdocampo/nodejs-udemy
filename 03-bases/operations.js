@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let multiply = (base) => {
+let multiply = (base, multiplier) => {
 
     return new Promise((resolve, reject) => {
 
@@ -10,8 +10,10 @@ let multiply = (base) => {
         }
         let data = '';
 
-        for (let i = 0; i <= 20; i++) {
+        for (let i = 0; i <= multiplier; i++) {
+            const currentData = `${base} * ${i} = ${base * i}`;
             data += `${base} * ${i} = ${base * i}\r\n`;
+            console.log(currentData)
         }
 
         fs.writeFile(`build/tablas/tabla-${base}.txt`, data, (err) => {
